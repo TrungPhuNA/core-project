@@ -3,10 +3,18 @@
 
 ## Mục lục
 [I. Giới thiệu](#I)
+
+[II. Cài đặt](#II)
+
+[III. Ví dụ sử dụng](#III)
+
+<a name = "I"></a>
+## I. Giới thiệu
 - Build thư viện này nhằm mục đích tiết kiệm thời gian code lại, copy từ dự án này qua dự án khác
 - Tăng hiệu năng trong công việc hihi.
 
-[II. Cài đặt](#II)
+<a name = "II"></a>
+## II. Cài đặt
 ```bash
 composer require corebase/project
 ```
@@ -29,7 +37,8 @@ Publish config, migrate
 ```bash
 php artisan vendor:publish --tag="core_project_migrate"
 ```
-[III. Ví dụ sử dụng](#III)
+<a name = "III"></a>
+## III. Ví dụ sử dụng
 
 Ví dụ về việc logs lại quá trình gủi email
 ```php 
