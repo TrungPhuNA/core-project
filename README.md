@@ -8,7 +8,7 @@ Version v1.1.0
 ## Installation
 
 ```bash
-
+    composer require corebase/project
 ```
 
 ### Khai báo service  config/app.php
@@ -32,7 +32,7 @@ Version v1.1.0
 php artisan vendor:publish --tag="core_project_migrate"
 ```
 
-### Example
+### Example save Log Email
 ```php 
 <?php
 
