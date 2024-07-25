@@ -1,6 +1,6 @@
 {
-    "name": "helpers/project",
-    "description": "Core service project",
+    "name": "corebase/project",
+    "description": "CoreBase service project",
     "type": "library",
     "license": "MIT",
     "autoload": {
