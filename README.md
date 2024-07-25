@@ -1,17 +1,16 @@
-# Laravel Logs send email ...
-Build service core in all project use
+# Core Project
+- Mọi thắc mắc liên hệ qua face <a href="https://www.facebook.com/TrungPhuNA" name = "I">Liên hệ </a>
 
+## Mục lục
+[I. Giới thiệu](#I)
+- Build thư viện này nhằm mục đích tiết kiệm thời gian code lại, copy từ dự án này qua dự án khác
+- Tăng hiệu năng trong công việc hihi.
 
-## Description
-Version v1.1.0
-
-## Installation
-
+[II. Cài đặt](#II)
 ```bash
-    composer require corebase/project
+composer require corebase/project
 ```
-
-### Khai báo service  config/app.php
+Khai báo service config/app.php
 ```php
 'providers' => ServiceProvider::defaultProviders()->merge([
         /*
@@ -26,13 +25,13 @@ Version v1.1.0
         ...
     ])->toArray(),
 ```
-### Publish config, migrate
-
+Publish config, migrate
 ```bash
 php artisan vendor:publish --tag="core_project_migrate"
 ```
+[III. Ví dụ sử dụng](#III)
 
-### Example save Log Email
+Ví dụ về việc logs lại quá trình gủi email
 ```php 
 <?php
 
