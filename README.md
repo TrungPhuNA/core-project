@@ -40,7 +40,8 @@ php artisan vendor:publish --tag="core_project_migrate"
 <a name = "III"></a>
 ## III. Ví dụ sử dụng
 
-Ví dụ về việc logs lại quá trình gủi email
+### Ví dụ về việc logs lại quá trình gủi email
+Code mẫu
 ```php 
 <?php
 
@@ -82,4 +83,15 @@ class JobSendEmailTest implements ShouldQueue
         }
     }
 }
+```
+
+Để xoá logs email bạn có thể sử dụng command 
+```bash
+php artisan logs-email:delete-old 100
+```
+- mặc đinh hệ thống sẽ xoá logs sau 30 ngày
+- Nếu muốn tăng số ngày thì bạn truyền số ngày
+- Mình cũng đã set job chạy hàng tuần để xoá dữ liệu các bạn có thể setup crontab cho project để job có thể chạy
+```bash
+* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
 ```
