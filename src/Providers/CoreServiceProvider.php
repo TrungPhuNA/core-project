@@ -5,7 +5,7 @@
  * Date: 7/25/24
  */
 
-namespace Core\Project\Providers;
+namespace Helpers\Project\Providers;
 
 use Core\Project\Illuminate\LogEmail\LogEmailEvent;
 use Core\Project\Illuminate\LogEmail\LogEmailListener;

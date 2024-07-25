@@ -5,7 +5,7 @@
  * Date: 7/25/24
  */
 
-namespace Core\Project\Illuminate\LogEmail;
+namespace Helpers\Project\Illuminate\LogEmail;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Queue\ShouldQueue;

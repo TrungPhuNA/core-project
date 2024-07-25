@@ -1,11 +1,11 @@
 {
-    "name": "pigs/project",
+    "name": "helpers/project",
     "description": "Core service project",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Core\\Project\\": "src/"
+            "Helpers\\Project\\": "src/"
         }
     },
     "authors": [

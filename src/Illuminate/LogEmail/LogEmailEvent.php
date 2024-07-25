@@ -5,7 +5,7 @@
  * Date: 7/25/24
  */
 
-namespace Core\Project\Illuminate\LogEmail;
+namespace Helpers\Project\Illuminate\LogEmail;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
