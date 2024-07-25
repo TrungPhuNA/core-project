@@ -1,5 +1,5 @@
 {
-    "name": "core/project",
+    "name": "pigs/project",
     "description": "Core service project",
     "type": "library",
     "license": "MIT",
