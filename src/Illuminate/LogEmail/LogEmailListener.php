@@ -19,7 +19,8 @@ class LogEmailListener implements ShouldQueue
     public function handle(LogEmailEvent $event)
     {
         DB::table('email_logs')->insert([
-            'recipient'  => $event->recipient,
+            'recipient'  => is_array($event->recipient) ? null : $event->recipient,
+            'recipients' => is_array($event->recipient) ? $event->recipient : null,
             'subject'    => $event->subject,
             'body'       => $event->body,
             'status'     => $event->status,

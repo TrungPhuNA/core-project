@@ -85,7 +85,7 @@ class JobSendEmailTest implements ShouldQueue
 }
 ```
 
-Để xoá logs email bạn có thể sử dụng command 
+### Để xoá logs email bạn có thể sử dụng command 
 ```bash
 php artisan logs-email:delete-old 100
 ```
