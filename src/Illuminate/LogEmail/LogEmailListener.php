@@ -8,6 +8,7 @@
 namespace Core\Project\Illuminate\LogEmail;
 
 use Carbon\Carbon;
+use Core\Project\Models\EmailLogs;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\DB;
@@ -18,7 +19,7 @@ class LogEmailListener implements ShouldQueue
 
     public function handle(LogEmailEvent $event)
     {
-        DB::table('email_logs')->insert([
+        EmailLogs::insert([
             'recipient'  => is_array($event->recipient) ? null : $event->recipient,
             'recipients' => is_array($event->recipient) ? $event->recipient : null,
             'subject'    => $event->subject,
