@@ -14,6 +14,7 @@ return new class extends Migration
         if (Schema::hasTable('email_logs')) {
             Schema::table('email_logs', function (Blueprint $table) {
                 $table->json('recipients')->nullable();
+                $table->string('recipient')->nullable()->change();
             });
         }
     }
