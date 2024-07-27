@@ -21,7 +21,7 @@ class LogEmailListener implements ShouldQueue
     {
         EmailLogs::insert([
             'recipient'  => is_array($event->recipient) ? null : $event->recipient,
-            'recipients' => is_array($event->recipient) ? $event->recipient : null,
+            'recipients' => is_array($event->recipient) ? json_encode($event->recipient) : null,
             'subject'    => $event->subject,
             'body'       => $event->body,
             'status'     => $event->status,
