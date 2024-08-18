@@ -16,14 +16,16 @@ class LogEmailEvent
 
     public $recipient;
     public $subject;
+    public $subjectId = 0;
     public $body;
     public $status;
     public $error;
 
-    public function __construct($recipient, $subject, $body, $status, $error = null)
+    public function __construct($recipient, $subject, $subjectId, $body, $status, $error = null)
     {
         $this->recipient = $recipient;
         $this->subject = $subject;
+        $this->subjectId = $subjectId;
         $this->body = $body;
         $this->status = $status;
         $this->error = $error;

@@ -23,6 +23,7 @@ class LogEmailListener implements ShouldQueue
             'recipient'  => is_array($event->recipient) ? null : $event->recipient,
             'recipients' => is_array($event->recipient) ? json_encode($event->recipient) : null,
             'subject'    => $event->subject,
+            'subject_id'    => $event->subjectId,
             'body'       => $event->body,
             'status'     => $event->status,
             'error'      => $event->error,
