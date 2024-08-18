@@ -14,6 +14,7 @@ return new class extends Migration
         if (Schema::hasTable('email_logs')) {
             Schema::table('email_logs', function (Blueprint $table) {
                 $table->integer('subject_id')->nullable();
+                $table->string('subject_type')->nullable();
                 $table->tinyInteger('retry')->nullable()->default(0);
             });
         }
@@ -26,7 +27,9 @@ return new class extends Migration
     {
         if (Schema::hasTable('email_logs')) {
             Schema::table('email_logs', function (Blueprint $table) {
-                $table->dropColumn('recipients');
+                $table->dropColumn('subject_id');
+                $table->dropColumn('subject_type');
+                $table->dropColumn('retry');
             });
         }
     }
