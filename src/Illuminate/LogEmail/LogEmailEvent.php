@@ -20,8 +20,9 @@ class LogEmailEvent
     public $body;
     public $status;
     public $error;
+    public $subject_type;
 
-    public function __construct($recipient, $subject, $subjectId, $body, $status, $error = null)
+    public function __construct($recipient, $subject, $subjectId, $body, $status, $error = null, $subject_type)
     {
         $this->recipient = $recipient;
         $this->subject = $subject;
@@ -29,5 +30,6 @@ class LogEmailEvent
         $this->body = $body;
         $this->status = $status;
         $this->error = $error;
+        $this->subject_type = $subject_type;
     }
 }
